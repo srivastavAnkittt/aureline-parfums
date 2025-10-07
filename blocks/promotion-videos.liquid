@@ -1,0 +1,70 @@
+{% liquid
+  assign media = block.settings.video
+  assign product = block.settings.product
+  assign discount_percent = product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | round
+%}
+<div class="promotion-wrap">
+  <article class="promotion-card">
+    <div class="promotion-media">
+      <div class="promotion-media promotion-media--rounded">
+        {{
+          media
+          | video_tag:
+            autoplay: true,
+            loop: true,
+            muted: true,
+            controls: true,
+            width: 640,
+            height: 260,
+            class: 'my-video'
+        }}
+      </div>
+    </div>
+
+    <a href="{{ product.url }}">
+      <div class="promotion-meta">
+        {{
+          product.featured_media
+          | image_url: width: product.featured_media.width
+          | image_tag: width: null, class: 'promotion-thumb'
+        }}
+        <div class="promotion-info">
+          <div class="promotion-title">{{ product.title }}</div>
+          <div class="promotion-price-row">
+            <span class="promotion-price">{{ product.price | money_without_trailing_zeros }}</span>
+            {% if product.compare_at_price > product.price %}
+              <span class="promotion-strike">{{ product.compare_at_price | money_without_trailing_zeros }}</span>
+            {% endif %}
+            {% if product.compare_at_price > product.price %}
+              <span class="promotion-pill">{{ discount_percent }}% off</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </a>
+  </article>
+</div>
+{% schema %}
+{
+  "name": "Promotion Videos",
+  "class": "promotion-videos",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Choose Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promotion Videos"
+    }
+  ]
+}
+{% endschema %}
