@@ -1,2 +1,7 @@
 {{ 'overflow-list.css' | asset_url | preload_tag: as: 'style' }}
 {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'promotion-videos.css' | asset_url | stylesheet_tag }}
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+<script defer src="{{ 'jquery.min.js' | asset_url }}"></script>
+<script defer src="{{ 'slick.min.js' | asset_url }}"></script>
+<script defer src="{{ 'promotion-videos.js' | asset_url }}"></script>
