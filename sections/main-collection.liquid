@@ -23,14 +23,7 @@
 {% endjavascript %}
 
 {% if collection.image %}
-<div>
- <img 
-  src="{{ collection.image | image_url: width: 1200 }}" 
-  alt="{{ collection.title }}" 
-  width="100%" 
-  height="auto"
->
-</div>
+  {{ collection.image | image_url: width: '1440' | image_tag: width: '100%', height: 'auto', class: 'collection-feature-image'}}
 {% endif %}
 
 {% comment %} We always render this full-width, as the child blocks have width: page/full settings {% endcomment %}
