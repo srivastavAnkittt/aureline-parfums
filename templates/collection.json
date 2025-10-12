@@ -15,7 +15,6 @@
         "text_tqQTNE": {
           "type": "text",
           "name": "Title",
-          "disabled": true,
           "settings": {
             "text": "<p>All Product</p>",
             "width": "fit-content",
@@ -42,7 +41,6 @@
         "text_twGGkJ": {
           "type": "text",
           "name": "Description",
-          "disabled": true,
           "settings": {
             "text": "{{ closest.collection.description }}",
             "width": "fit-content",
@@ -71,7 +69,6 @@
         "text_tqQTNE",
         "text_twGGkJ"
       ],
-      "disabled": true,
       "name": "Collection heading",
       "settings": {
         "content_direction": "column",
