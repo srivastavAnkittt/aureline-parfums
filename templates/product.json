@@ -691,7 +691,7 @@
           "settings": {
             "image": "shopify://shop_images/Royalamberinspiration.webp",
             "link": "shopify://products/little-beach-100ml",
-            "image_ratio": "adapt",
+            "image_ratio": "landscape",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -718,7 +718,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "flex-end",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
             "width": "custom",
