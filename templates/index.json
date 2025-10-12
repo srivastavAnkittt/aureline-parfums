@@ -692,7 +692,7 @@
         "group_Ccd6at": {
           "type": "group",
           "settings": {
-            "link": "shopify://collections/parfums",
+            "link": "shopify://collections/perfums",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -1033,7 +1033,7 @@
       },
       "name": "t:names.products_grid",
       "settings": {
-        "collection": "parfums",
+        "collection": "perfums",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 8,
@@ -1058,7 +1058,7 @@
         "group_48bibt": {
           "type": "group",
           "settings": {
-            "link": "shopify://collections/parfums",
+            "link": "shopify://collections/perfums",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -1142,7 +1142,7 @@
         "group_cpreH4": {
           "type": "group",
           "settings": {
-            "link": "shopify://collections/parfums",
+            "link": "shopify://collections/perfums",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
