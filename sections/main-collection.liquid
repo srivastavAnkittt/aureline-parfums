@@ -34,6 +34,10 @@
   <div
     class="collection-wrapper grid gap-style"
   >
+    {% if collection.image %}
+  <img src="{{ collection.image | image_url: width: 1200 }}" alt="{{ collection.title }}">
+{% endif %}
+
     {% content_for 'block',
       type: 'filters',
       id: 'filters',
