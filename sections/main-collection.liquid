@@ -22,9 +22,7 @@
   }
 {% endjavascript %}
 
-{% if collection.image %}
-  <img src="{{ collection.image | image_url: width: 1200 }}" alt="{{ collection.title }}">
-{% endif %}
+
 
 {% comment %} We always render this full-width, as the child blocks have width: page/full settings {% endcomment %}
 <div class="section-background color-{{ section.settings.color_scheme }}">
