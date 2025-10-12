@@ -528,7 +528,7 @@
               "settings": {
                 "image": "shopify://shop_images/Royalamberinspiration.webp",
                 "link": "",
-                "image_ratio": "adapt",
+                "image_ratio": "landscape",
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
